@@ -212,7 +212,10 @@ header .navbar ul li a:hover {
   z-index: 1;
 }
 .home .image img {
-  width: 70%;
+  width: min(70%, 38rem);
+  aspect-ratio: 1;
+  object-fit: cover;
+  object-position: top center;
   margin-left: 6rem;
   border-radius: 50%;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
@@ -315,11 +318,11 @@ header .navbar ul li a:hover {
 .social-icons a.linkedin:hover {
   background-color: #007bb6;
 }
-.social-icons a.dev:hover {
-  background-color: #070707;
+.social-icons a.mail:hover {
+  background-color: #ea4335;
 }
-.social-icons a.instagram:hover {
-  background-color: #ee00da;
+.social-icons a.phone:hover {
+  background-color: #1faa59;
 }
 /* social icons end */
 
@@ -362,7 +365,9 @@ header .navbar ul li a:hover {
 .about .row .image img {
   margin: 4rem;
   width: 30rem;
-  height: auto;
+  height: 36rem;
+  object-fit: cover;
+  object-position: top center;
   border-radius: 5%;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.6);
   mix-blend-mode: luminosity;
