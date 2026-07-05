@@ -98,13 +98,14 @@ function showSkills(skills) {
 
 function showProjects(projects) {
     let projectsContainer = document.querySelector("#work .box-container");
+    if (!projectsContainer) return;
     let projectHTML = "";
     projects.slice(0, 10).filter(project => project.category != "android").forEach(project => {
         const viewButton = project.links.view && project.links.view !== "#" ? `<a href="${project.links.view}" class="btn" target="_blank"><i class="fas fa-eye"></i> View</a>` : "";
         const codeButton = project.links.code && project.links.code !== "#" ? `<a href="${project.links.code}" class="btn" target="_blank">Code <i class="fas fa-code"></i></a>` : "";
         projectHTML += `
         <div class="box tilt">
-      <img draggable="false" src="/assets/images/projects/${project.image}.png" alt="project" />
+      <img draggable="false" src="./assets/images/projects/${project.image}.png" alt="project" />
       <div class="content">
         <div class="tag">
         <h3>${project.name}</h3>

@@ -53,10 +53,10 @@ document.addEventListener('visibilitychange',
 function(){
     if(document.visibilityState === "visible"){
         document.title = "Experience | Portfolio Munjurul Ahsan Munna";
-        $("#favicon").attr("href","/assets/images/favicon.png");
+        $("#favicon").attr("href","../assets/images/favicon.png");
     }
     else {
         document.title = "Munjurul Ahsan Munna";
-        $("#favicon").attr("href","/assets/images/favicon.png");
+        $("#favicon").attr("href","../assets/images/favicon.png");
     }
 });
